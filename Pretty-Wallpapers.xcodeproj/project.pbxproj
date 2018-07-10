@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0303411B2B22D8B269451F06 /* Pods_Pretty_Wallpapers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62F194DF1F238EE5945E5ED /* Pods_Pretty_Wallpapers.framework */; };
 		FE27839B20F43C20006FF7D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27839A20F43C20006FF7D6 /* AppDelegate.swift */; };
 		FE27839D20F43C20006FF7D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27839C20F43C20006FF7D6 /* ViewController.swift */; };
 		FE2783A020F43C20006FF7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE27839E20F43C20006FF7D6 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		452CB18A2D21C1690CAF216B /* Pods-Pretty-Wallpapers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty-Wallpapers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty-Wallpapers/Pods-Pretty-Wallpapers.debug.xcconfig"; sourceTree = "<group>"; };
+		D74ED452B79B46E41EF0F13D /* Pods-Pretty-Wallpapers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty-Wallpapers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty-Wallpapers/Pods-Pretty-Wallpapers.release.xcconfig"; sourceTree = "<group>"; };
+		E62F194DF1F238EE5945E5ED /* Pods_Pretty_Wallpapers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretty_Wallpapers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE27839720F43C20006FF7D6 /* Pretty-Wallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty-Wallpapers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE27839A20F43C20006FF7D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE27839C20F43C20006FF7D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0303411B2B22D8B269451F06 /* Pods_Pretty_Wallpapers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E90311279A7AB4853E53322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				452CB18A2D21C1690CAF216B /* Pods-Pretty-Wallpapers.debug.xcconfig */,
+				D74ED452B79B46E41EF0F13D /* Pods-Pretty-Wallpapers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		227425031C59F66D3FFE5207 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E62F194DF1F238EE5945E5ED /* Pods_Pretty_Wallpapers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE27838E20F43C20006FF7D6 = {
 			isa = PBXGroup;
 			children = (
 				FE27839920F43C20006FF7D6 /* Pretty-Wallpapers */,
 				FE27839820F43C20006FF7D6 /* Products */,
+				1E90311279A7AB4853E53322 /* Pods */,
+				227425031C59F66D3FFE5207 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE2783A920F43C24006FF7D6 /* Build configuration list for PBXNativeTarget "Pretty-Wallpapers" */;
 			buildPhases = (
+				B9E5A94315FBF32DA678A7F9 /* [CP] Check Pods Manifest.lock */,
 				FE27839320F43C20006FF7D6 /* Sources */,
 				FE27839420F43C20006FF7D6 /* Frameworks */,
 				FE27839520F43C20006FF7D6 /* Resources */,
+				29C344B3C02FA172D7D37506 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29C344B3C02FA172D7D37506 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pretty-Wallpapers/Pods-Pretty-Wallpapers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pretty-Wallpapers/Pods-Pretty-Wallpapers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E5A94315FBF32DA678A7F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pretty-Wallpapers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE27839320F43C20006FF7D6 /* Sources */ = {
@@ -278,16 +343,14 @@
 		};
 		FE2783AA20F43C24006FF7D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452CB18A2D21C1690CAF216B /* Pods-Pretty-Wallpapers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JX3EAWJE5N;
 				INFOPLIST_FILE = "Pretty-Wallpapers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johnnyperdomo.Pretty-Wallpapers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -297,16 +360,14 @@
 		};
 		FE2783AB20F43C24006FF7D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74ED452B79B46E41EF0F13D /* Pods-Pretty-Wallpapers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JX3EAWJE5N;
 				INFOPLIST_FILE = "Pretty-Wallpapers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johnnyperdomo.Pretty-Wallpapers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
