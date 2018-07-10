@@ -11,10 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageText: UILabel!
     
     let urlString = "https://source.unsplash.com/collection/1065412"
-    
-    
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +22,16 @@ class ViewController: UIViewController {
 
     @IBAction func exportBtnPressed(_ sender: Any) {
         
+        if imageView.image != nil {
+            shareImage()
+        }
+        
     }
     
     @IBAction func randomBtnPressed(_ sender: Any) {
+        
         getImage()
+        imageText.isHidden = true
     }
     
 
@@ -43,6 +48,15 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    func shareImage() {
+        let image = imageView.image
+        let imageShare = [image!]
+        let activityViewController = UIActivityViewController(activityItems: imageShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
     
 }
 

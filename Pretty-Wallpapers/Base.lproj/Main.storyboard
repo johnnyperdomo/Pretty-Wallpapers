@@ -22,34 +22,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOO-QC-5md">
-                                <rect key="frame" x="280" y="716" width="50" height="50"/>
+                                <rect key="frame" x="280" y="698" width="50" height="50"/>
                                 <state key="normal" image="random"/>
                                 <connections>
                                     <action selector="randomBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vww-og-y1h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjq-4f-TNz">
-                                <rect key="frame" x="45" y="716" width="50" height="50"/>
+                                <rect key="frame" x="45" y="698" width="50" height="50"/>
                                 <state key="normal" image="export"/>
                                 <connections>
                                     <action selector="exportBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGt-9T-Ngu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Random Image 🏙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rv-F0-QHx">
+                                <rect key="frame" x="38.666666666666657" y="390.66666666666669" width="299" height="31.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pjq-4f-TNz" secondAttribute="bottom" constant="12" id="01e-b9-0Oi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pjq-4f-TNz" secondAttribute="bottom" constant="30" id="01e-b9-0Oi"/>
+                            <constraint firstItem="1rv-F0-QHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33I-L0-zAL"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="If3-Pl-tv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOO-QC-5md" secondAttribute="trailing" constant="45" id="NUo-ma-Iqi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XOO-QC-5md" secondAttribute="bottom" constant="12" id="VC4-Ja-8ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XOO-QC-5md" secondAttribute="bottom" constant="30" id="VC4-Ja-8ax"/>
                             <constraint firstItem="pjq-4f-TNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="VGx-yu-oXu"/>
                             <constraint firstAttribute="bottom" secondItem="RDI-ks-SqO" secondAttribute="bottom" id="cSE-Qo-Avj"/>
+                            <constraint firstItem="1rv-F0-QHx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fxW-n7-k3N"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAw-Hx-UrY"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jKQ-fL-BWs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imageText" destination="1rv-F0-QHx" id="Ikj-AV-zCQ"/>
                         <outlet property="imageView" destination="RDI-ks-SqO" id="Bif-oa-HvO"/>
                     </connections>
                 </viewController>
