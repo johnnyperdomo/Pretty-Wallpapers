@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDI-ks-SqO">
-                                <rect key="frame" x="0.0" y="44" width="375" height="652"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOO-QC-5md">
                                 <rect key="frame" x="280" y="716" width="50" height="50"/>
@@ -39,12 +39,11 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pjq-4f-TNz" secondAttribute="bottom" constant="12" id="01e-b9-0Oi"/>
-                            <constraint firstItem="XOO-QC-5md" firstAttribute="top" secondItem="RDI-ks-SqO" secondAttribute="bottom" constant="20" id="BYN-iu-wJy"/>
-                            <constraint firstItem="pjq-4f-TNz" firstAttribute="top" secondItem="RDI-ks-SqO" secondAttribute="bottom" constant="20" id="N6Z-3d-Na3"/>
+                            <constraint firstItem="RDI-ks-SqO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="If3-Pl-tv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOO-QC-5md" secondAttribute="trailing" constant="45" id="NUo-ma-Iqi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XOO-QC-5md" secondAttribute="bottom" constant="12" id="VC4-Ja-8ax"/>
                             <constraint firstItem="pjq-4f-TNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="VGx-yu-oXu"/>
-                            <constraint firstItem="RDI-ks-SqO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bFg-sW-L08"/>
+                            <constraint firstAttribute="bottom" secondItem="RDI-ks-SqO" secondAttribute="bottom" id="cSE-Qo-Avj"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAw-Hx-UrY"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jKQ-fL-BWs"/>
                         </constraints>

@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var imageView: UIImageView!
+    
+    let urlString = "https://source.unsplash.com/collection/1065412"
+    
+    
     
         override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +26,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func randomBtnPressed(_ sender: Any) {
-        
+        getImage()
     }
     
 
+    func getImage() {
+        
+        if let url = URL(string: urlString) {
+            
+            do {
+                let data = try Data(contentsOf: url)
+                self.imageView.image = UIImage(data: data)
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
+    }
+    
 }
+
 
