@@ -2,7 +2,7 @@
 iOS Wallpaper App using Unsplash API
 
 ## Preview
-![Alt Text](https://media.giphy.com/media/8qFVSFf2vGJ2dvIVa8/giphy.gif )
+![Alt Text](https://media.giphy.com/media/2wh2BAO7mztG2I4Rpk/giphy.gif)
 
 **Built with**
 - Ios 11.4
@@ -13,6 +13,8 @@ iOS Wallpaper App using Unsplash API
 - **Get a Random Image from [Unsplash Api](https://source.unsplash.com/)**
 - **Turn a URL String into an Image**
 - **Share and Download Images using ```UIActivityViewController```**
+- **Swipe Left or Right to Change Images with ```UISwipeGestureRecognizer```**
+- **Custom Animations with [Spring by MengTo](https://github.com/MengTo/Spring)**
 
 ## Project Configuration
 You'll have to configure your Xcode project in order to download images into Photo Library.
