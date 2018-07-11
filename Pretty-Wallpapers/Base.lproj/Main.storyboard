@@ -18,38 +18,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDI-ks-SqO">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDI-ks-SqO" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.6873779296875" green="0.6873779296875" blue="0.6873779296875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOO-QC-5md">
-                                <rect key="frame" x="280" y="698" width="50" height="50"/>
-                                <state key="normal" image="random"/>
-                                <connections>
-                                    <action selector="randomBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vww-og-y1h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjq-4f-TNz">
-                                <rect key="frame" x="45" y="698" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjq-4f-TNz" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="162.66666666666666" y="698" width="50" height="50"/>
                                 <state key="normal" image="export"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="exportBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGt-9T-Ngu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Random Image 🏙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rv-F0-QHx">
-                                <rect key="frame" x="38.666666666666657" y="390.66666666666669" width="299" height="31.666666666666686"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to choose a random image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rv-F0-QHx" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="22.666666666666657" y="394" width="330.66666666666674" height="25.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pjq-4f-TNz" secondAttribute="bottom" constant="30" id="01e-b9-0Oi"/>
                             <constraint firstItem="1rv-F0-QHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33I-L0-zAL"/>
+                            <constraint firstItem="pjq-4f-TNz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ETP-pQ-pAc"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="If3-Pl-tv0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOO-QC-5md" secondAttribute="trailing" constant="45" id="NUo-ma-Iqi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XOO-QC-5md" secondAttribute="bottom" constant="30" id="VC4-Ja-8ax"/>
-                            <constraint firstItem="pjq-4f-TNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="VGx-yu-oXu"/>
                             <constraint firstAttribute="bottom" secondItem="RDI-ks-SqO" secondAttribute="bottom" id="cSE-Qo-Avj"/>
                             <constraint firstItem="1rv-F0-QHx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fxW-n7-k3N"/>
                             <constraint firstItem="RDI-ks-SqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAw-Hx-UrY"/>
@@ -58,7 +78,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageText" destination="1rv-F0-QHx" id="Ikj-AV-zCQ"/>
+                        <outlet property="exportBtn" destination="pjq-4f-TNz" id="aGT-c4-UCJ"/>
+                        <outlet property="imageText" destination="1rv-F0-QHx" id="cAC-zU-uQD"/>
                         <outlet property="imageView" destination="RDI-ks-SqO" id="Bif-oa-HvO"/>
                     </connections>
                 </viewController>
@@ -69,6 +90,5 @@
     </scenes>
     <resources>
         <image name="export" width="50" height="50"/>
-        <image name="random" width="50" height="50"/>
     </resources>
 </document>
