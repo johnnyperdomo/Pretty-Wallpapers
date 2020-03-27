@@ -2,7 +2,7 @@
 iOS Wallpaper App using Unsplash API
 
 ## Preview
-![Alt Text](https://media.giphy.com/media/2wh2BAO7mztG2I4Rpk/giphy.gif)
+![Alt Text](https://media.giphy.com/media/MdXTt1pwLczeUisbRc/giphy.gif)
 
 **Built with**
 - Ios 11.4
